@@ -10,7 +10,7 @@ const Button = ({
   const getVariantClass = () => {
     switch (variant) {
       case "primary":
-        return "bg-[#08322f] text-white";
+        return "bg-green-900 text-white";
       case "secondary":
         return "bg-gray-500 text-white";
       case "success":
