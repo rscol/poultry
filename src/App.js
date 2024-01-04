@@ -1,21 +1,38 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
 import { Route, Routes } from "react-router-dom";
-import SignUpForm from './Components/SignUpForm';
-import SignInForm from './Components/SignInForm';
-
+import NoNavLayout from "./layouts/NoNavLayout";
+import SignInPage from "./pages/SignInPage";
+import SignUpPage from "./pages/SignUpPage";
+import Layout from "./layouts/AdminLayout";
+import Dashboard from "./Components/Dashboard";
 
 function App() {
   return (
-    <React.Fragment>
-      <Routes>
-        <Route path="/SignUpForm" element={ <SignUpForm/>} />
-      </Routes>
-      <Routes>
-        <Route path="/SignInForm" element={ <SignInForm/>} />
-      </Routes>
-    </React.Fragment>
-  )
+    <Routes>
+      <Route
+        path="/SignUpForm"
+        element={
+          <NoNavLayout>
+            <SignUpPage />
+          </NoNavLayout>
+        }
+      />
+      <Route
+        path="/"
+        element={
+          <NoNavLayout>
+            <SignInPage />
+          </NoNavLayout>
+        }
+      />
+      <Route path="/Dashboard" element={
+        <Layout>
+          <Dashboard />
+        </Layout>
+      } />
+    </Routes>
+  );
 }
 
 export default App;

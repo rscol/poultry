@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Button from "./Button";
 import FormInput from "./FormInput";
-import LottiePlayer from "../layouts/signSidebar";
 
 const SignUpForm = () => {
   const navigate = useNavigate();
@@ -59,19 +58,17 @@ const SignUpForm = () => {
     }
 
     return errors;
-    };
-    
-     const handleSignUpClick = () => {
-       // Navigate to the Sign Up page
-       navigate("/SignInForm");
-     };
+  };
+
+  const handleSignUpClick = () => {
+    // Navigate to the Sign Up page
+    navigate("/SignInForm");
+  };
 
   return (
-    <div className="grid lg:grid-cols-2">
-     <div className="hidden lg:block pl-10"> 
-     <LottiePlayer  /> 
-     </div>
-      <div className="lg:col-span-1 mt-8 self-center">
+    <div className="">
+    
+      <div className="">
         <div className="p-10 max-w-lg">
           <h2 className="text-2xl font-semibold mb-4">Sign Up</h2>
           <form onSubmit={handleSubmit}>
@@ -117,8 +114,8 @@ const SignUpForm = () => {
 
             <Button text="Sign Up" onClick={handleSubmit} variant="success" />
           </form>
-          
-           <div className="mt-4">
+
+          <div className="mt-4">
             <p>
               Already have an account?
               <span
@@ -127,8 +124,8 @@ const SignUpForm = () => {
               >
                 Sign In
               </span>
-                      </p>
-                      </div>
+            </p>
+          </div>
         </div>
       </div>
     </div>
