@@ -6,9 +6,11 @@ import SignInPage from "./pages/SignInPage";
 import SignUpPage from "./pages/SignUpPage";
 import Layout from "./layouts/AdminLayout";
 import Dashboard from "./Components/Dashboard";
+import WebLayout from "./layouts/WebLayout";
+import Landing from "./pages/Landing";
 
 function App() {
-  return (
+  return ( 
     <Routes>
       <Route
         path="/SignUpForm"
@@ -19,11 +21,19 @@ function App() {
         }
       />
       <Route
-        path="/"
+        path="/SignInForm"
         element={
           <NoNavLayout>
             <SignInPage />
           </NoNavLayout>
+        }
+      />
+      <Route
+        path="/"
+        element={
+          <WebLayout>
+            <Landing />
+          </WebLayout>
         }
       />
       <Route path="/Dashboard" element={

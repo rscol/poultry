@@ -1,10 +1,13 @@
+// Button.js
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Button = ({
   text,
   onClick,
   type = "button",
   variant = "primary",
+  to,
   className,
 }) => {
   const getVariantClass = () => {
@@ -23,6 +26,14 @@ const Button = ({
   };
 
   const buttonClass = `py-2 px-4 rounded-md hover:opacity-80 focus:outline-none ${getVariantClass()} ${className}`;
+
+  if (to) {
+    return (
+      <Link to={to} className={buttonClass}>
+        {text}
+      </Link>
+    );
+  }
 
   return (
     <button type={type} onClick={onClick} className={buttonClass}>
