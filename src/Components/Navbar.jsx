@@ -1,24 +1,44 @@
-// Navbar.js
 import React from "react";
 import Button from "./Button";
-import { Link } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 
 const Navbar = () => {
   return (
     <nav className="bg-slate-300 p-4">
-      <div className="container mx-auto flex justify-between items-center">
+      <div className="container mx-auto flex justify-between gap-7 lg:gap-0 items-center">
         <div className="text-2xl font-bold text-green-800">RsCol</div>
-        <div className="flex space-x-14 items-center">
-          <Link to="about" className="text-black">
+        <div className="flex lg:space-x-14 space-x-4 items-center">
+          <ScrollLink
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={-70} 
+            duration={500}
+            className="text-black cursor-pointer"
+          >
             About
-          </Link>
-          <Link to="feature" className="text-black">
+          </ScrollLink>
+          <ScrollLink
+            to="feature"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            className="text-black cursor-pointer"
+          >
             Feature
-          </Link>
-          <Link to="contact" className="text-black">
+          </ScrollLink>
+          <ScrollLink
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            className="text-black cursor-pointer"
+          >
             Contact
-          </Link>
-          <Button text="Login" variant="primary" to="/signin" />
+          </ScrollLink>
+          <Button text="Login" variant="primary" to="/SignInForm" />
         </div>
       </div>
     </nav>

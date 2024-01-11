@@ -137,7 +137,7 @@ const SignInForm = () => {
             </form>
             <div className="mt-4">
               <p
-                className="text-blue-700 cursor-pointer"
+                className="text-green-700 cursor-pointer"
                 onClick={handleCloseForgotPasswordPopup}
               >
                 Close
