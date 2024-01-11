@@ -1,6 +1,7 @@
 {
   "name": "poultry",
   "version": "0.1.0",
+  "homepage": "./",
   "private": true,
   "dependencies": {
     "@dotlottie/player-component": "^2.7.5",
