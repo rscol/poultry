@@ -30,7 +30,7 @@ const SignUpForm = () => {
 
     if (Object.keys(validationErrors).length === 0) {
       console.log("Form Values:", formData);
-      navigate("/signin");
+      navigate("/SignInForm");
     }
   };
 
@@ -61,7 +61,6 @@ const SignUpForm = () => {
   };
 
   const handleSignUpClick = () => {
-    // Navigate to the Sign Up page
     navigate("/SignInForm");
   };
 
