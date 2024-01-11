@@ -6,7 +6,7 @@ import { BsLightningFill } from "react-icons/bs";
 import { FaExclamationTriangle, FaLightbulb } from "react-icons/fa";
 
 const Dashboard = () => {
-  const [barChartData, setBarChartData] = useState({
+  const [barChartData] = useState({
     series: [{ data: [400, 430, 448, 470, 540, 580, 690] }],
     chart: { type: "bar", height: 350 },
     plotOptions: {
@@ -26,7 +26,7 @@ const Dashboard = () => {
     },
   });
 
-  const [areaChartData, setAreaChartData] = useState({
+  const [areaChartData] = useState({
     series: [
       { name: "Current", data: [2, 1, 4, 7, 3, 2, 1] },
       { name: "Voltage", data: [12, 8, 7, 8, 5, 10, 4] },
