@@ -47,7 +47,7 @@ const WHoWeAre = () => {
         <h2 className="font-inter px-6 text-start text-4xl font-bold pb-4">
           Why Choose Us
         </h2>
-        <p className="font-inter text-[16px] text-start px-6 pb-10 lg:pb-20 text-gray-500">
+        <p className="font-inter text-sm lg:text-[16px] text-start px-6 pb-10 lg:pb-20 text-gray-500 lg:leading-7 leading-6">
           Elevate your generator management with Generator Maintenance App.
           Optimize performance and extend lifespan through proactive
           maintenance. Enjoy remote control for flexibility and user-friendly

@@ -3,7 +3,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="bg-slate-100 lg:py-32">
+    <div className="bg-slate-100 lg:py-32 p-8 lg:p-0">
     <div className="grid lg:grid-cols-2 gap-12 lg:mx-12 ">
       <div className="col-span-1">
         <script
@@ -21,7 +21,7 @@ const About = () => {
       </div>
       <div className="col-span-1">
         <h2 className="pb-4 text-3xl font-bold">About Us</h2>
-        <p className="text-[15px] text-gray-800 w-5/6 leading-7">
+        <p className="lg:text-[15px] text-sm text-gray-800 w-5/6 leading-6 lg:leading-7">
           RSCol Generator Maintenance App is your ultimate solution for
           streamlined and proactive generator management. With real-time
           monitoring, proactive alerts, and an intuitive user-friendly

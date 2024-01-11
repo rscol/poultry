@@ -4,7 +4,7 @@ import gen from "../assets/gen.jpg";
 
 const Hero = () => {
   return (
-    <div className="container mx-4 mb-16 lg:mx-12 grid lg:grid-cols-2 gap-16">
+    <div className="container my-10 lg:my-0 mx-4 mb-16 lg:mx-12 grid lg:grid-cols-2 gap-16">
       <div className="flex justify-center items-center">
         <div className="flex flex-col gap-6">
           <h2 className="lg:text-6xl text-3xl md:text-5xl font-bold leading-tight text-gray-900">
@@ -26,7 +26,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="">
+      <div className="hidden lg:block">
         <img
           src={gen}
           alt="gen"

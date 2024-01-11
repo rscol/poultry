@@ -39,11 +39,11 @@ const Direct = () => {
       <div className="mb-10">
         <p className="text-md flex gap-2 items-center mb-2">
           <FaPhone className="text-green-800 text-center" />
-          <span>+234 907 726 3621</span>
+          <span>+234 802 302 0858</span>
         </p>
         <p className="text-md flex gap-2 items-center">
           <FaEnvelope className="text-green-800" />
-          <span>info@Rscol.com</span>
+          <span>rscolmanvent@gmail.com</span>
         </p>
       </div>
 
