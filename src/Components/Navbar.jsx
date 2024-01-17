@@ -19,16 +19,6 @@ const Navbar = () => {
             About
           </ScrollLink>
           <ScrollLink
-            to="feature"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-            className="text-black cursor-pointer"
-          >
-            Feature
-          </ScrollLink>
-          <ScrollLink
             to="contact"
             spy={true}
             smooth={true}

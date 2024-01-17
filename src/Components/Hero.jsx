@@ -22,7 +22,7 @@ const Hero = () => {
             </p>
           </div>
           <div>
-            <Button text="Get Started" variant="primary" to="/SignUpForm"/>
+            <Button text="Login " variant="primary" to="/SignInForm"/>
           </div>
         </div>
       </div>
